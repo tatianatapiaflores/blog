@@ -1,13 +1,16 @@
 *{
     text-decoration: none;
     text-align: center;
-    color: palevioletred;
-    background-color: rgb(31, 28, 28);
+    background-color: black;
+    color: blanchedalmond;
 }
 nav {
     justify-content: space-around;
     display: flex;
     align-items: center;
+}
+img{
+    border-radius: 50%;
 }
 .reviews {
     justify-content: space-around;

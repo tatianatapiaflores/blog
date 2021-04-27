@@ -1,9 +1,18 @@
 *{
     text-decoration: none;
     text-align: center;
+    background-color: black;
+    color: blanchedalmond;
 }
 nav {
     justify-content: space-around;
     display: flex;
     align-items: center;
+}
+img{
+    border-radius: 50%;
+    border-color: lightblue ;
+}
+ul{
+    list-style-type: none;
 }
