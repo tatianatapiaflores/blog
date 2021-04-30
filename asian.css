@@ -13,3 +13,25 @@ nav {
 img{
     border-radius: 50%;
 }
+.recipe{
+    justify-content: space-around;  
+    display: flex; 
+    padding-top: 50px;
+}
+.recipe1{
+    flex: 1;
+}
+.recipe2{
+    flex: 1;
+}
+.recipes{
+    justify-content: space-evenly;
+    display: flex;
+    padding-top: 50px;
+}
+.recipe3{
+    flex: 1;
+}
+.recipe4{
+    flex: 1;
+}
