@@ -14,6 +14,16 @@
             <a href="./childhood.html">Childhood Meals</a>
             <a href="./hispanic.html">Hispanic Recipes</a>
             <a href="./asian.html">Asian Recipes</a>
+            <script>
+                function call() {
+                  if (document.querySelector('h1').innerHTML === 'Leave a review') {
+                  document.querySelector('h1').innerHTML = 'Thank You!';
+                } else {
+                    document.querySelector('h1').innerHTML = 'Leave a review';
+                }
+            }
+                 
+            </script>
         </nav>
     </header>
     <div>
@@ -96,6 +106,12 @@
        </div>
        </div>
     </div>
+    <h1>Leave a review</h1>
+    <form> 
+        <input type="text" placeholder="name" name="full-name">
+        <input type="text" placeholder="message" name="message">
+        <button onclick="call()">Submit</button>
+    </form>
     
 </body>
 </html>
