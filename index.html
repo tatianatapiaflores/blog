@@ -15,14 +15,19 @@
             <a href="./hispanic.html">Hispanic Recipes</a>
             <a href="./asian.html">Asian Recipes</a>
             <script>
-                function call() {
-                  if (document.querySelector('h1').innerHTML === 'Leave a review') {
-                  document.querySelector('h1').innerHTML = 'Thank You!';
-                } else {
-                    document.querySelector('h1').innerHTML = 'Leave a review';
-                }
-            }
-                 
+                
+                 document.addEventListener('DOMContentLoaded', function () {
+                    document.querySelector('form').onsubmit = () => {
+                        const name = document.querySelector('#new').value;
+                        console.log(name);
+                        //const li = document.createElement('li');
+                        //li.innerHTML = message;
+
+
+
+                        return false;
+                    }
+                 });
             </script>
         </nav>
     </header>
@@ -102,15 +107,16 @@
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
-        </div>
+             </div>
+             <ul id="new"></ul>
        </div>
-       </div>
+
     </div>
     <h1>Leave a review</h1>
     <form> 
-        <input type="text" placeholder="name" name="full-name">
-        <input type="text" placeholder="message" name="message">
-        <button onclick="call()">Submit</button>
+        <input type="text" placeholder="name" id="full-name">
+        <input type="text" placeholder="message" id="message">
+        <button>Submit</button>
     </form>
     
 </body>
